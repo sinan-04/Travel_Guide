@@ -39,6 +39,13 @@ body {
     margin: 0 auto 50px;
 }
 
+.location {
+    display: none;
+}
+
+.location:target {
+    display: block;
+}
 .opt {
     background-color: white;
     transition: 0.4s;
