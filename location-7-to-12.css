@@ -1,0 +1,244 @@
+/* ==============================
+   GENERAL STYLES
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f8f8;
+    color: #333;
+}
+
+
+/* ==============================
+   DESTINATION SECTION
+   ============================== */
+
+.destinations {
+    width: 100%;
+    padding: 70px 8%;
+}
+
+
+/* ==============================
+   SECTION HEADING
+   ============================== */
+
+.section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.small-title {
+    color: #12a8a0;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.section-heading h1 {
+    font-size: 40px;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* ==============================
+   DESTINATION CONTAINER
+   ============================== */
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* ==============================
+   DESTINATION CARD
+   ============================== */
+
+.destination-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.10);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+/* Card hover effect */
+
+.destination-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ==============================
+   IMAGE
+   ============================== */
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+
+/* Image zoom on hover */
+
+.destination-card:hover .image-container img {
+    transform: scale(1.08);
+}
+
+
+/* Country label */
+
+.country {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    background-color: white;
+    padding: 7px 12px;
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* ==============================
+   CARD CONTENT
+   ============================== */
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h2 {
+    font-size: 22px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   PLACES LIST
+   ============================== */
+
+.card-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.card-content li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 7px;
+}
+
+
+/* Add a small symbol before each place */
+
+.card-content li::before {
+    content: "✓";
+    color: #12a8a0;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+
+/* ==============================
+   EXPLORE BUTTON
+   ============================== */
+
+.explore-btn {
+    display: inline-block;
+
+    background-color: #12a8a0;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: #087d78;
+}
+
+
+/* ==============================
+   TABLET
+   ============================== */
+
+@media (max-width: 900px) {
+
+    .destination-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-heading h1 {
+        font-size: 34px;
+    }
+}
+
+
+/* ==============================
+   MOBILE
+   ============================== */
+
+@media (max-width: 600px) {
+
+    .destinations {
+        padding: 50px 5%;
+    }
+
+    .destination-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h1 {
+        font-size: 30px;
+    }
+
+    .image-container {
+        height: 230px;
+    }
+}
