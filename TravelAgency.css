@@ -1,232 +1,392 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #444;
-  background: #fff;
-  line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #444;
+    background: white;
+    line-height: 1.6;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .container {
-  width: min(1100px, 92%);
-  margin: auto;
+    width: 92%;
+    max-width: 1100px;
+    margin: auto;
 }
 
+
 .hero {
-  position: relative;
-  min-height: 420px;
-  background:
-    linear-gradient(rgba(218, 247, 247, .15), rgba(255,255,255,.1)),
-    url("HeroImage.jpg")
-    center/cover no-repeat;
-  display: flex;
-  align-items: center;
+    position: relative;
+    min-height: 420px;
+    background:
+        linear-gradient(rgba(218,247,247,.15), rgba(255,255,255,.1)),
+        url("HeroImage.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
 }
 
 .hero-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, rgba(255,255,255,.12), rgba(35,193,188,.08));
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.08);
 }
 
 .hero-content {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-title {
-  width: fit-content;
-  margin-left: 9%;
-  background: rgba(17, 184, 176, .86);
-  color: #fff;
-  padding: 8px 16px;
+    width: fit-content;
+    margin-left: 9%;
+    padding: 8px 16px;
+    background: rgba(17,184,176,.86);
+    color: white;
 }
 
 .hero-title span {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .hero-title h1 {
-  font-size: 31px;
-  line-height: 1.1;
-  font-weight: 700;
+    font-size: 31px;
+    line-height: 1.1;
 }
 
 .hero-title p {
-  font-size: 11px;
+    font-size: 11px;
 }
 
+
 .search-wrap {
-  position: absolute;
-  z-index: 2;
-  bottom: -28px;
-  left: 50%;
-  transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    bottom: -28px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .search-tabs {
-  display: flex;
+    display: flex;
 }
 
 .search-tabs button {
-  border: 0;
-  padding: 10px 25px;
-  background: #16aaa5;
-  color: #fff;
-  cursor: pointer;
-  font-size: 12px;
+    border: 0;
+    padding: 10px 25px;
+    background: #16aaa5;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
 }
 
-.search-tabs button.selected {
-  background: white;
-  color: #555;
+.search-tabs .selected {
+    background: white;
+    color: #555;
 }
 
 .search-form {
-  background: white;
-  padding: 13px;
-  display: flex;
-  gap: 10px;
-  align-items: end;
-  box-shadow: 0 2px 12px rgba(0,0,0,.15);
+    background: white;
+    padding: 13px;
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
 }
 
 .search-form label {
-  flex: 1;
-  color: #999;
-  font-size: 9px;
+    flex: 1;
+    color: #999;
+    font-size: 9px;
 }
 
 .search-form input,
 .search-form select {
-  width: 100%;
-  margin-top: 3px;
-  border: 1px solid #eee;
-  padding: 9px 7px;
-  color: #aaa;
-  font-size: 10px;
-  outline: none;
+    width: 100%;
+    margin-top: 3px;
+    padding: 9px 7px;
+    border: 1px solid #eee;
+    color: #aaa;
+    font-size: 10px;
 }
 
 .search-btn,
 .red-btn {
-  border: 0;
-  background: #10aaa5;
-  color: white;
-  padding: 10px 24px;
-  font-size: 10px;
-  cursor: pointer;
+    border: 0;
+    padding: 10px 24px;
+    background: #10aaa5;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
 }
 
+
 .section {
-  padding: 75px 0 65px;
+    padding: 75px 0 65px;
 }
 
 .section-heading {
-  text-align: center;
-  margin-bottom: 35px;
+    text-align: center;
+    margin-bottom: 35px;
 }
 
 .section-heading h2 {
-  font-size: 22px;
-  font-weight: 400;
-  color: #444;
-  margin-bottom: 8px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .section-heading p {
-  font-size: 10px;
-  color: #aaa;
+    font-size: 10px;
+    color: #aaa;
 }
 
 .why {
-  padding-top: 82px;
+    padding-top: 82px;
 }
+
 
 .features {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
 }
 
-.feature-icon {
-  width: 52px;
-  height: 52px;
-  margin: 0 auto 12px;
-  border: 2px solid #444;
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-  font-size: 24px;
+.feature img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
-.features h3 {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 8px;
+.feature h3 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
-.features p,
-.features a {
-  font-size: 9px;
-  color: #aaa;
+.feature p {
+    font-size: 9px;
+    color: #aaa;
 }
 
-.features a {
-  display: block;
-  margin-top: 10px;
+.feature a {
+    display: block;
+    margin-top: 10px;
+    font-size: 9px;
+    color: #aaa;
 }
+
+.feature a:hover {
+    color: #10aaa5;
+}
+
 
 .promotion {
-  background:
-    linear-gradient(90deg, rgba(15,183,177,.90), rgba(25,188,183,.84)),
-    url("MiddelImage.png")
-    center/cover;
-  color: white;
+    background:
+        linear-gradient(90deg, rgba(15,183,177,.90), rgba(25,188,183,.84)),
+        url("MiddelImage.png") center/cover no-repeat;
+    color: white;
 }
 
 .promotion-inner {
-  min-height: 125px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
+    min-height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .promotion h2 {
-  font-size: 20px;
-  color: #fff;
+    font-size: 20px;
 }
 
 .promotion p {
-  max-width: 690px;
-  font-size: 9px;
+    max-width: 690px;
+    font-size: 9px;
 }
 
 .promotion strong {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 .promotion strong b {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 .red-btn {
-  background: #f20d20;
-  min-width: 70px;
-  text-align: center;
+    background: #f20d20;
+    min-width: 70px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero-title {
+        margin-left: 5%;
+    }
+
+    .hero-title h1 {
+        font-size: 27px;
+    }
+
+    .search-form {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    .promotion-inner {
+        padding: 20px 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 600px;
+        align-items: flex-start;
+        padding-top: 60px;
+    }
+
+    .hero-title {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .hero-title span {
+        font-size: 15px;
+    }
+
+    .hero-title h1 {
+        font-size: 23px;
+    }
+
+    .hero-title p {
+        font-size: 9px;
+    }
+
+    .search-wrap {
+        width: 92%;
+        bottom: -100px;
+    }
+
+    .search-tabs button {
+        flex: 1;
+        padding: 9px 5px;
+        font-size: 10px;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .search-btn {
+        width: 100%;
+    }
+
+    .section {
+        padding: 70px 0 45px;
+    }
+
+    .why {
+        padding-top: 140px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .section-heading p {
+        font-size: 9px;
+    }
+
+    .section-heading br {
+        display: none;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 15px;
+    }
+
+    .feature img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .feature h3 {
+        font-size: 13px;
+    }
+
+    .feature p {
+        font-size: 8px;
+    }
+
+    .promotion-inner {
+        min-height: 150px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .promotion h2 {
+        font-size: 18px;
+    }
+
+    .promotion p {
+        font-size: 8px;
+    }
+
+    .red-btn {
+        margin-top: 5px;
+    }
+}
+
+
+
+@media (max-width: 420px) {
+
+    .hero-title h1 {
+        font-size: 20px;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature p {
+        max-width: 220px;
+        margin: auto;
+    }
 }
