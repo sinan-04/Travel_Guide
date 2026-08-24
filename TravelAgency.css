@@ -636,3 +636,413 @@ nav a.active {
         grid-template-columns: 1fr;
     }
 }
+/* =========================================
+   POPULAR CRUISES
+========================================= */
+
+.popular-cruises {
+    width: 100%;
+    background: white;
+    padding: 40px 0 35px;
+}
+
+
+/* Heading */
+
+.cruise-heading {
+    width: 700px;
+    max-width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.cruise-heading h2 {
+    font-size: 26px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.cruise-heading p {
+    font-size: 11px;
+    color: #999;
+    line-height: 18px;
+}
+
+
+/* Cards */
+
+.cruise-cards {
+    width: 940px;
+    max-width: 90%;
+    margin: 30px auto 0;
+
+    display: flex;
+    gap: 12px;
+}
+
+
+.cruise-card {
+    width: 33.33%;
+    background: #f8f8f8;
+}
+
+
+/* Cruise image */
+
+.cruise-card img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Cruise details */
+
+.cruise-details {
+    padding: 12px 14px;
+}
+
+
+.cruise-details h3 {
+    margin: 0 0 7px;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    color: #555;
+}
+
+
+.cruise-details h3 span {
+    color: #ed747d;
+    font-size: 9px;
+    margin-left: 3px;
+}
+
+
+.cruise-details p {
+    margin: 0;
+
+    font-size: 10px;
+    line-height: 16px;
+
+    color: #999;
+
+    min-height: 48px;
+}
+
+
+/* Bottom */
+
+.cruise-bottom {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-top: 8px;
+}
+
+
+/* Stars */
+
+.stars {
+    color: #f3c33d;
+
+    font-size: 10px;
+
+    letter-spacing: -2px;
+}
+
+
+/* See all */
+
+.cruise-bottom button {
+    border: none;
+
+    background: #16b7ad;
+
+    color: white;
+
+    padding: 6px 12px;
+
+    font-size: 8px;
+
+    cursor: pointer;
+}
+
+.cruise-bottom button:hover {
+    background: #0e9d96;
+}
+
+
+/* Dots */
+
+.cruise-dots {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 20px;
+}
+
+
+.cruise-dots span {
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    background: #ddd;
+}
+
+
+.cruise-dots span.active {
+    background: #16b7ad;
+}
+
+
+
+/* =========================================
+   HAPPY CUSTOMERS
+========================================= */
+
+.happy-customers {
+    width: 100%;
+
+    min-height: 330px;
+
+    background-image:
+        linear-gradient(
+            rgba(31, 105, 103, 0.88),
+            rgba(31, 105, 103, 0.88)
+        ),
+        url("images/customer-bg.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.customer-container {
+    width: 940px;
+
+    max-width: 90%;
+
+    min-height: 330px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: flex-end;
+}
+
+
+/* Left image */
+
+.customer-image {
+    width: 50%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+}
+
+
+.customer-image img {
+    width: 430px;
+
+    max-width: 100%;
+
+    display: block;
+}
+
+
+/* Right content */
+
+.customer-content {
+    width: 50%;
+
+    padding: 35px 0 30px 25px;
+
+    color: white;
+}
+
+
+.customer-content h2 {
+    margin: 0 0 4px;
+
+    font-size: 25px;
+
+    font-weight: 400;
+}
+
+
+.customer-content h4 {
+    margin: 0 0 15px;
+
+    font-size: 10px;
+
+    font-weight: 400;
+
+    color: #d7eeee;
+}
+
+
+.customer-content p {
+    margin: 0 0 9px;
+
+    color: #d5e5e5;
+
+    font-size: 9px;
+
+    line-height: 15px;
+}
+
+
+
+/* =========================================
+   PROGRESS BARS
+========================================= */
+
+.rating {
+    margin-top: 11px;
+}
+
+
+.rating-text {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 9px;
+
+    margin-bottom: 4px;
+
+    color: white;
+}
+
+
+.bar {
+    width: 100%;
+
+    height: 5px;
+
+    background: white;
+}
+
+
+.bar-fill {
+    height: 5px;
+
+    background: #16b7ad;
+}
+
+
+/* Percentage */
+
+.flights {
+    width: 94%;
+}
+
+.hotels {
+    width: 85%;
+}
+
+.cars {
+    width: 60%;
+}
+
+.cruises {
+    width: 55%;
+}
+
+
+
+/* =========================================
+   PARTNER LOGOS
+========================================= */
+
+.partner-logos {
+    width: 100%;
+
+    background: white;
+
+    padding: 28px 0;
+}
+
+
+.logo-container {
+    width: 940px;
+
+    max-width: 90%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.logo-container img {
+    width: 95px;
+
+    max-height: 50px;
+
+    object-fit: contain;
+
+    opacity: 0.55;
+
+    filter: grayscale(100%);
+}
+
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .cruise-cards {
+        flex-direction: column;
+    }
+
+    .cruise-card {
+        width: 100%;
+    }
+
+
+    .customer-container {
+        flex-direction: column;
+    }
+
+    .customer-image {
+        width: 100%;
+    }
+
+    .customer-content {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+
+    .logo-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+    }
+
+}
