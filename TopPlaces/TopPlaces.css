@@ -39,13 +39,6 @@ body {
     margin: 0 auto 50px;
 }
 
-.location {
-    display: none;
-}
-
-.location:target {
-    display: block;
-}
 .opt {
     background-color: white;
     transition: 0.4s;
@@ -79,7 +72,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 11px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s 444444;
 }
 
 .details:hover {
